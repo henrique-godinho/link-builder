@@ -1,0 +1,112 @@
+html {
+    background-color: rgb(32, 37, 44);
+    color: white;
+    text-align: center;
+    font-family: 'Inter', sans-serif;
+}
+
+header {
+    font-size: 3rem;
+    margin: 10px;
+}
+
+div {
+    padding: 15px;
+}
+
+.league {
+    border: 1px solid white;
+    display: flex;
+    justify-content: space-between
+
+}
+.match {
+    cursor: pointer;
+}
+
+
+.odds {
+    float: right;
+    margin-left: 20px;
+}
+
+.accordion {
+    max-width: 50%;
+    text-align: left;
+    
+}
+
+.accordion-item {
+    width: max-content;
+
+}
+
+.ui-accordion-header {
+    padding: 100px;
+    border: 1px grey solid;
+}
+
+.odds:hover {
+    cursor: pointer;
+}
+
+.betslip {
+    max-width: 100%;
+    height: 100%;
+    float: right;
+    border: 1px greenyellow solid;
+    position: sticky;
+    top: 5%;
+    background-color: rgb(22, 23, 24);
+    display: flex;
+    flex-direction: column;
+    position: sticky;
+    justify-content: right;
+    padding: 50px;
+
+}
+
+.betslip > .selected_market > p > button.odds:hover {
+    cursor: default;
+}
+
+.deleteButton {
+    background-color: red;
+    color: white;
+}
+
+.deleteButton:hover {
+    cursor: pointer;
+}
+
+.continue-button {
+    position: absolute;
+    bottom: 0;
+    margin-bottom: 10px;
+    font-size:medium;
+    margin-top: 10px;
+    background-color: greenyellow;
+    color: black;
+}
+
+.continue-button:hover {
+    cursor: pointer;
+}
+
+.manual-generator {
+    float: right;
+    width: 35%;
+    border: 1px solid greenyellow;
+    text-align: center;
+}
+
+.sports {
+    float: left;
+    text-align: center;
+    width: 60%;
+    border: 1px solid greenyellow;
+}
+
+button:hover {
+    cursor: pointer;
+}

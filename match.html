@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style/style.css">
+    <link rel="stylesheet" type="text/css" href="jquery_themed/jquery-ui.css">
+    <link rel="stylesheet" type="text/css" href="jquery_themed/jquery-ui.structure.css">
+    <link rel="stylesheet" type="text/css" href="jquery_themed/jquery-ui.theme.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@500&display=swap" rel="stylesheet">
+    <title>Match Details</title>
+</head>
+<body> 
+    <script src="jquery_themed/external/jquery/jquery.js"></script>
+    <script src="jquery_themed/jquery-ui.js"></script>
+    <script src="matchDetails.js"></script>
+
+    <div id="dialog" title="Parameters">
+        <form id="generateLinkForm">
+            <h5>Bet Type</h5>
+            <label for="single">Singles</label>
+            <input type="radio" id="single" name="btype" value="single">
+            <label for="acca">Acca</label>
+            <input type="radio" id="acca" name="btype" value="acca">
+            <lable for="bbuilder">Bet Builder</lable>
+            <input type="radio" id="bbuilder" name="btype" value="betbuilder">
+
+            <h5>Btag</h5>
+            <label for="btag-a">a_</label>
+            <input type="number" id="btag-a" name="btag-a"><br>
+            <label for="btag-b">b_</label>
+            <input type="number" id="btag-b" name="btag-b" placeholder="1"><br>
+            <label for="btag-c">c_</label>
+            <input type="text" id="btag-c" name="btag-c"><br>
+
+            <h5>UTMs</h5>
+            <label for="utm_source">utm_source</label>
+            <input type="text" id="utm_source" name="utm_source"><br>
+            <label for="utm_campaign">utm_campaign</label>
+            <input type="text" id="utm_campaign" name="utm_campaign"><br>
+            <label for="utm_medium">utm_medium</label>
+            <input type="text" id="utm_medium" name="utm_medium"><br>
+            <label for="utm_term">utm_term</label>
+            <input type="text" id="utm_term" name="utm_term"><br>
+            <br>
+            <br>
+            <input type="submit" value="Generate Link">
+
+        </form>
+        
+    </div>
+
+</body>
+</html>
